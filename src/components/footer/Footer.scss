@@ -1,0 +1,102 @@
+.footer {
+    background-color: $secondary-color;
+    padding: 50px 0 25px;
+
+    &__container {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "logo text ."
+            ". social legal";
+        gap: 25px;
+        width: 90%;
+        margin: 0 auto;
+
+        @include respond(md) {
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                "logo"
+                "text"
+                "social"
+                "legal";
+        }
+    }
+
+    &__logo {
+        grid-area: logo;
+        width: 130px;
+        height: auto;
+        margin-right: 30px;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        @include respond(md) {
+            margin-bottom: spacing(2);
+        }
+    }
+
+    &__text {
+        grid-area: text;
+
+        h2 {
+            font-size: $font-size-xxl;
+            font-weight: $font-weight-medium;
+            color: $text-color-3;
+            margin-bottom: spacing(2);
+        }
+
+        p {
+            font-size: $font-size-base;
+            color: $text-color-3;
+            line-height: 1.6;
+            width: 40%;
+
+            @include respond(xl) {
+                width: 80%;
+            }
+
+            @include respond(lg) {
+                width: 80%;
+            }
+
+            @include respond(md) {
+                width: 100%;
+            }
+
+            span {
+                display: block;
+                margin-top: spacing(1);
+            }
+        }
+    }
+
+    &__social {
+        grid-area: social;
+
+        p {
+            font-size: $font-size-sm;
+            color: $text-color-3;
+            margin-bottom: spacing(1);
+        }
+    }
+
+    &__legal {
+        grid-area: legal;
+        text-align: right;
+
+        p {
+            font-size: $font-size-sm;
+            color: $text-color-3;
+            margin-bottom: spacing(1);
+        }
+
+        @include respond(md) {
+            text-align: left;
+            margin-top: spacing(2);
+        }
+    }
+}

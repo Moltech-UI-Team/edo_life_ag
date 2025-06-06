@@ -1,0 +1,115 @@
+.leadership-philosophy-section {
+  padding: 40px 0;
+  background: $white-color;
+  max-width: 80%;
+  margin: 0 auto;
+
+  @include custom-media(1300px) {
+    padding: 40px 20px;
+  }
+
+  .text-content {
+    margin-bottom: 30px;
+
+    h2 {
+      font-size: fluid-font(30, 45);
+      font-weight: $font-weight-medium;
+      margin-bottom: 50px;
+      max-width: 70%;
+
+      @include custom-media(1300px) {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .slider {
+    cursor: grab;
+    overflow-x: auto;
+    display: flex;
+    gap: 50px;
+    padding-bottom: 20px;
+    user-select: none;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    @include custom-media(1300px) {
+      gap: 20px;
+    }
+
+    /* Hide scrollbar for WebKit browsers (Chrome, Safari) */
+    &::-webkit-scrollbar {
+      height: 0;
+      display: none;
+    }
+
+    /* Hide scrollbar for Firefox */
+    scrollbar-width: none;
+
+    /* Hide scrollbar for IE and Edge */
+    -ms-overflow-style: none;
+
+    &.active {
+      cursor: grabbing;
+    }
+
+    .video-card {
+      flex: 0 0 300px;
+      /* fixed width */
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      user-select: none;
+
+      .video-title {
+        padding: 10px 0px;
+        font-weight: $font-weight-medium;
+        color: $text-color-2;
+        font-size: $font-size-xxl;
+        border-bottom: 1px solid $border-color;
+        max-width: 60%;
+      }
+
+      .iframe-wrapper {
+        position: relative;
+        width: 100%;
+        padding-top: 56.25%;
+        /* 16:9 Aspect Ratio */
+        overflow: hidden;
+        min-width: 440px;
+        max-width: 440px;
+        min-height: 300px;
+        max-height: 300px;
+        @include custom-media(1300px) {
+          min-width: 300px;
+          max-width: 300px;
+          min-height: 200px;
+          max-height: 200px;
+        }
+
+        iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border: none;
+          pointer-events: auto;
+          border-radius: 20px;
+        }
+      }
+
+      .video-name {
+        padding: 10px 15px;
+        font-size: $font-size-lg;
+        font-weight: $font-weight-normal;
+        color: $white-color;
+      }
+    }
+  }
+}
+
+.background-color {
+  background-color: $text-color-2;
+  height: 400px;
+  margin-top: -280px;
+}

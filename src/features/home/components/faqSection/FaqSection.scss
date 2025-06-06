@@ -1,0 +1,115 @@
+.faq-section {
+    background-color: $bg-color;
+  
+    .section-title {
+      font-size: fluid-font(30, 45);
+      font-weight: $font-weight-semibold;
+      margin-bottom: 35px;
+      text-align: start;
+      max-width: 80%;
+      margin: 0 auto;
+      padding: 50px 0;
+  
+      @include custom-media(1300px) {
+        max-width: 100%;
+        padding: 20px;
+      }
+    }
+  
+    .container {
+      display: flex;
+      gap: 50px;
+      width: 100%;
+      padding: 0 20px 20px;
+  
+      @include custom-media(1024px) {
+        flex-direction: column;
+      }
+  
+      .left {
+        width: 40%;
+  
+        @include custom-media(1024px) {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+        }
+  
+        img {
+          width: 90%;
+  
+          @include custom-media(1024px) {
+            width: 100%;
+          }
+        }
+      }
+  
+      .right {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+  
+        @include custom-media(1024px) {
+          width: 100%;
+        }
+  
+        .faq-item {
+          cursor: pointer;
+          transition: all 0.3s ease;
+  
+          .question {
+            display: flex;
+            align-items: center;
+            font-size: $font-size-lg;
+            font-weight: $font-weight-medium;
+            color: $text-color-2;
+            position: relative;
+            padding-right: 40px;
+  
+            .number {
+              margin-right: 10px;
+              font-weight: $font-weight-semibold;
+              font-size: $font-size-xxl;
+            }
+  
+            .line {
+              position: absolute;
+              right: 0;
+              height: 2px;
+              width: 30%;
+              background-color: #ff6600;
+              transition: width 0.3s ease;
+              bottom: 0;
+              &::before {
+                content: '';
+                position: absolute;
+                right: 30px;
+                top: 50%;
+                transform: translateY(-50%);
+                height: 40px;
+                width: 2px;
+                background-color: #ff6600;
+                transition: width 0.3s ease;
+              }
+            }
+          }
+  
+          .answer {
+            margin-top: 10px;
+            font-size: $font-size-base;
+            color: $text-color-2;
+            line-height: 1.5;
+            padding-right: 40px;
+          }
+  
+          &.active {
+            .line {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+  

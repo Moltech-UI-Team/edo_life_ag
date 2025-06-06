@@ -1,0 +1,147 @@
+.core-modules-section {
+    padding: 60px 15px;
+    min-height: 1200px;
+    background-color: $background-light-grey;
+
+    @include custom-media(1024px) {
+        min-height: 1560px;
+        padding-bottom: 0;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        text-align: left;
+
+        .title {
+            font-size: 40px;
+            font-weight: 600;
+            margin-bottom: 45px;
+
+            @include custom-media(500px) {
+                margin-bottom: 0;
+            }
+        }
+
+        .bubbles {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+
+            .bubble {
+                background-color: $secondary-color;
+                border-radius: 50%;
+                padding: 30px 90px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                border: 1px solid $white-color;
+                font-size: $font-size-base;
+                line-height: 1.5;
+                position: absolute;
+
+                h3 {
+                    font-size: $font-size-xl;
+                    font-weight: $font-weight-medium;
+                    margin-bottom: 15px;
+                }
+
+                p {
+                    white-space: pre-line;
+                }
+            }
+
+            .bubble-1 {
+                top: 190px;
+                left: 150px;
+                width: 454px;
+                height: 454px;
+                z-index: 2;
+
+                @include custom-media(1024px) {
+                    top: 250px;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    text-align: center;
+                }
+
+                @include custom-media(500px) {
+                    width: 400px;
+                    height: 400px;
+                }
+            }
+
+            .bubble-2 {
+                top: -20px;
+                left: 43%;
+                z-index: 1;
+                width: 532px;
+                height: 532px;
+
+                @include custom-media(1024px) {
+                    top: 630px;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    text-align: center;
+                }
+
+                @include custom-media(500px) {
+                    width: 400px;
+                    height: 400px;
+                }
+            }
+
+            .bubble-3 {
+                top: 460px;
+                left: 38%;
+                width: 518px;
+                height: 518px;
+                z-index: 3;
+
+                @include custom-media(1024px) {
+                    top: 1050px;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    text-align: center;
+                }
+
+                @include custom-media(500px) {
+                    top: 990px;
+                    width: 400px;
+                    height: 400px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1024px) {
+        .bubbles {
+            .bubble {
+                position: static;
+                margin: 1rem auto;
+            }
+        }
+    }
+
+    @media (max-width: 600px) {
+        .title {
+            font-size: $font-size-xxl;
+            text-align: center;
+        }
+
+        .bubbles {
+            flex-direction: column;
+            align-items: center;
+
+            .bubble {
+                width: 90%;
+                height: auto;
+                border-radius: 1rem;
+                text-align: left;
+                padding: 20px;
+            }
+        }
+    }
+}

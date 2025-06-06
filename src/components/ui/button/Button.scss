@@ -1,0 +1,25 @@
+.button {
+    background-color: $button-color;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    color: $white-color;
+    font-weight: $font-weight-medium;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: color 0.3s ease;
+  
+    // Add a gradient background layer
+    background-image: linear-gradient(to right, $button-hover-color 50%, $button-color 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position 0.4s ease;
+  
+    &:hover {
+      background-position: left bottom;
+      color: $white-color;
+    }
+  }
+  

@@ -1,0 +1,108 @@
+.system-change-section {
+    min-height: 800px;
+    @include custom-media(900px) {
+        min-height: unset;
+    }
+
+    &__bg {
+        width: 100%;
+        position: absolute;
+        height: 100%;
+        z-index: 0;
+
+        img {
+            width: 100%;
+            height: 800px;
+            object-fit: cover;
+
+            @include custom-media(900px) {
+                height: 100%;
+            }
+        }
+    }
+
+    &__content {
+        position: relative;
+        z-index: 1;
+        @include flex-align-center(10px);
+
+        @include custom-media(900px) {
+            flex-direction: column;
+        }
+
+        .left {
+            width: 60%;
+            margin-left: 100px;
+
+            @include custom-media(900px) {
+                margin-left: 0;
+                width: 100%;
+                @include flex-center;
+                padding: 50px 0 50px;
+            }
+
+            .box {
+                background-color: $white-color;
+                padding: 35px;
+                max-width: 60%;
+                box-shadow: $box-shadow;
+
+                @include custom-media(600px) {
+                    max-width: 90%;
+                }
+
+                .title {
+                    font-size: $font-size-xxl;
+                    font-weight: $font-weight-medium;
+                    margin-bottom: 20px;
+                    color: $black-color;
+                }
+
+                .description {
+                    font-size: $font-size-lg;
+                    line-height: 1.5;
+                    color: $black-color;
+                }
+            }
+        }
+
+        .right {
+            width: 40%;
+            background-color: rgba(255, 255, 255, 0.8);
+            height: 800px;
+            @include flex-align-center(30px);
+
+            @include custom-media(900px) {
+                width: 100%;
+                height: auto;
+            }
+
+            .box {
+                padding: 0 60px;
+                
+                @include custom-media(900px) {
+                    background-color: $white-color;
+                    padding: 25px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 100%;
+                }
+
+                .title {
+                    font-size: $font-size-xxl;
+                    font-weight: $font-weight-medium;
+                    margin-bottom: 20px;
+                    color: $black-color;
+                }
+
+                .description {
+                    font-size: $font-size-lg;
+                    line-height: 1.5;
+                    color: $black-color;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,99 @@
+.leader-testimonials-section {
+  padding: 80px 25px;
+  background-color: $white-color;
+  color: $text-color-2;
+
+  .container {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .section-title {
+    font-size: fluid-font(30, 45);
+    font-weight: $font-weight-medium;
+    margin-bottom: 35px;
+    text-align: start;
+
+    @include custom-media(1300px) {
+      max-width: 100%;
+    }
+  }
+
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+
+    @media (max-width: 1024px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 600px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .testimonial-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .testimonial-image-wrapper {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+
+      .testimonial-image {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 6px;
+        display: block;
+      }
+
+      .testimonial-name-overlay {
+        position: absolute;
+        bottom: -100%;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        color: $white-color;
+        padding: 10px 15px;
+        font-size: $font-size-lg;
+        font-weight: $font-weight-medium;
+        text-align: center;
+        transition: bottom 0.4s ease;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        pointer-events: none;
+      }
+
+      &:hover .testimonial-name-overlay {
+        bottom: 0;
+      }
+
+      // Always show the name on mobile screens
+      @media (max-width: 1024px) {
+        .testimonial-name-overlay {
+          bottom: 0;
+        }
+      }
+    }
+
+    .testimonial-quote {
+      font-size: $font-size-base;
+      line-height: 1.5;
+      color: $text-color-2;
+      margin-top: 15px;
+    }
+
+    &:nth-child(3),
+    &:nth-child(4) {
+      margin-top: 250px;
+
+      @media (max-width: 1024px) {
+        margin-top: 0;
+      }
+    }
+  }
+}

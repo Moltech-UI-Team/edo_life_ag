@@ -1,0 +1,93 @@
+// 1. Helper Functions First
+@import "../helpers/functions";
+@import "../helpers/mediaQueries";
+
+// 2. Base Variables & Mixins
+@import "../base/variables";
+@import "../base/mixins";
+
+// 3. Reset and Base Typography
+@import "../base/reset";
+@import "../base/typography";
+
+// Global Styles
+body {
+  font-family: $font-family-primary;
+  background-color: $white-color;
+  color: $text-color;
+  font-size: $font-size-base;
+  line-height: 1.5;
+}
+
+// Layout styles Start
+.main-layout-section {
+  @include flex-column-gap(0px);
+  min-height: 100dvh;
+  overflow-x: hidden;
+  .header-section {
+    flex: 0 0 auto;
+    border-bottom: 1px solid $border-color;
+  }
+
+  .body-section {
+    flex: 1 1 auto;
+  }
+
+  .footer-section {
+    flex: 0 0 auto;
+  }
+}
+// Layout Styles End
+
+// Example usage of media queries for responsive design
+@include respond(sm) {
+  body {
+    font-size: $font-size-sm;
+  }
+}
+
+@include respond(md) {
+  body {
+    font-size: $font-size-base;
+  }
+}
+
+@include respond(lg) {
+  body {
+    font-size: $font-size-lg;
+  }
+}
+
+.title-desc-top {
+  display: flex;
+  justify-content: space-between;
+
+  .left-title-sec {
+    .page-title {
+      font-size: $font-size-xl;
+      color: $text-color;
+      margin: 0;
+    }
+    .desc {
+      font-size: $font-size-s;
+      margin-top: 5px;
+    }
+  }
+  .right-title-sec {
+    text-align: right;
+    p {
+      margin: 0;
+      font-size: $font-size-s;
+      span {
+        cursor: pointer;
+        text-transform: uppercase;
+        color: $text-color;
+        font-weight: $font-weight-semibold;
+        transition: 0.5s all;
+        &:hover{
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
