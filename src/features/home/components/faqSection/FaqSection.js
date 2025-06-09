@@ -7,31 +7,27 @@ import './FaqSection.scss';
 const faqData = [
   {
     question: 'Ist ReflectIQ ein klassisches Training oder Coaching-Programm?',
-    answer: 'ReflectIQ ist kein klassisches Training, sondern ein digitales, begleitendes Reflexions-Tool für Führungskräfte.'
+    answer: 'Nein. ReflectIQ ist ein systemisches Führungssystem, das sich nahtlos in den Arbeitsalltag integriert. Statt Schulungen oder starren Formaten arbeitet ReflectIQ mit flexiblen Impulsen, KI-gestützter Reflexion und gezielter Begleitung – genau dort, wo in der Organisation echte Bewegung möglich ist. '
   },
   {
     question: 'Wie viel Zeit müssen unsere Führungskräfte oder Teams investieren?',
-    answer: 'In der Regel reichen wenige Minuten pro Woche – ReflectIQ ist sehr effizient gestaltet.'
+    answer: 'Weniger, als Du denkst – und deutlich weniger, als klassische Programme erfordern. ReflectIQ ist so konzipiert, dass maximale Wirkung mit minimalem Zeitaufwand entsteht. Das System arbeitet im Hintergrund, Führung und Team setzen gezielte Impulse um – ohne dass der Alltag blockiert wird.'
   },
   {
     question: 'Funktioniert ReflectIQ auch für größere Organisationen oder Konzerne?',
-    answer: 'Ja, ReflectIQ ist skalierbar und eignet sich für kleine Teams genauso wie für große Organisationen.'
+    answer: 'Ja – ReflectIQ ist vollständig skalierbar. Egal ob Einzelteam, mehrere Führungsebenen oder konzernweite Rollouts: Das System lässt sich flexibel auf Größe, Struktur und Kultur abstimmen – ohne an Wirksamkeit zu verlieren. '
   },
   {
     question: 'Was passiert, wenn sich einzelne Führungskräfte oder Teams „sperren“?',
-    answer: 'Das Tool schafft durch kluge Fragen einen sicheren Raum – die Teilnahme bleibt freiwillig, aber wird meist gerne angenommen.'
+    answer: 'Das ist normal – und sogar einkalkuliert. ReflectIQ erzeugt keine künstliche Motivation, sondern echte Einsicht. Gerade durch die KI-gestützte Spiegelung und die Impulslogik entstehen Dialoge, die sonst nicht stattfinden – oft sogar gerade bei den „kritischen Köpfen“. '
   },
   {
     question: 'Wie wird die Wirkung messbar gemacht?',
-    answer: 'Durch regelmäßiges Feedback, klare Ziele und optional quantitative Auswertungen können Fortschritte sichtbar gemacht werden.'
-  },
-  {
-    question: 'Wie sicher ist der Umgang mit Daten bei ReflectIQ?',
-    answer: 'Datensicherheit hat höchste Priorität – ReflectIQ erfüllt alle gängigen DSGVO-Vorgaben.'
+    answer: 'ReflectIQ liefert über die integrierte KI, qualitative Teamspiegelungen und Feedbackschleifen klare Datenpunkte – sowohl zur individuellen Entwicklung als auch zur Systemveränderung. Veränderung bleibt nicht Gefühl – sie wird sichtbar und steuerbar. '
   },
   {
     question: 'Können wir ReflectIQ auch nur mit einem Team testen?',
-    answer: 'Ja, ein Pilotprojekt mit einem Team ist problemlos möglich, um das Tool kennenzulernen.'
+    answer: 'Ja, ein Pilotformat ist jederzeit möglich. Viele Kunden starten gezielt klein, z. b. mit einem 10-köpfigen Team, um die Wirkung zu erleben – und rollen dann aus, wenn sie überzeugt sind. ReflectIQ ist darauf ausgelegt, Wirkung auch im Kleinen zu entfalten. '
   }
 ];
 

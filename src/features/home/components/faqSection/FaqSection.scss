@@ -66,6 +66,7 @@
             color: $text-color-2;
             position: relative;
             padding-right: 40px;
+            user-select: none;
   
             .number {
               margin-right: 10px;
