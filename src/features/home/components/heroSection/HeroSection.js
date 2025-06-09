@@ -11,7 +11,7 @@ const HeroSection = () => {
         <div className="hero-section__effect">
           <Image src={AppIcons.EffectImage} alt="Effect" />
         </div>
-        <div className="hero-section__content" data-aos="fade-right">
+        <div className="hero-section__content">
           <h1>Die neue Herzkammer<br />Deines Vertriebserfolgs</h1>
           <h3>Leadership, die High Performance-Teams<br />stärkt und entfesselt.</h3>
           <p>
