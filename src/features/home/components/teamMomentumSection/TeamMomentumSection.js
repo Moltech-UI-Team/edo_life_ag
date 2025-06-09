@@ -17,7 +17,7 @@ const TeamMomentumSection = () => {
         <div className='team-momentum-section__bg'>
             <Image src={AppIcons.teamMomentumSectionBackground} alt="teamMomentumSectionBackground" />
         </div>
-      <div className="team-momentum-section__left">
+      <div className="team-momentum-section__left" data-aos="fade-right">
         {stats.map((stat, index) => (
           <div key={index} className="team-momentum-section__left__item">
             <div className="left">{stat.value}</div>
@@ -26,7 +26,7 @@ const TeamMomentumSection = () => {
         ))}
       </div>
 
-      <div className="team-momentum-section__right">
+      <div className="team-momentum-section__right" data-aos="fade-left">
         <div className="highlight-box">
           <div className="percentage">93%</div>
           <div className="text">

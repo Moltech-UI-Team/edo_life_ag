@@ -46,10 +46,10 @@ const FaqSection = () => {
     <section className="faq-section">
       <h2 className="section-title">FAQ</h2>
       <div className="container">
-        <div className="left">
+        <div className="left" data-aos="fade-right">
           <Image src={AppIcons.faqSectionImage} alt="faqSectionImage" />
         </div>
-        <div className="right">
+        <div className="right" data-aos="fade-left">
           {faqData.map((item, index) => (
             <div
               key={index}

@@ -7,12 +7,12 @@ const LeadershipQuoteSection = () => {
     return (
         <div className='leadership-quote-section'>
             <div className="container">
-                <div className="left">
+                <div className="left" data-aos="fade-right">
                     <div className="profile">
                         <Image src={AppIcons.hermannProfilePic} alt="hermannProfilePic" />
                     </div>
                 </div>
-                <div className="right">
+                <div className="right" data-aos="fade-left">
                     <div className="quote">
                         „Führung ist nicht, Menschen zu bewegen. Es ist, Räume zu schaffen, in denen Menschen sich bewegen wollen. ReflectIQ schafft genau diese Räume – intelligent, menschlich und wirkungsvoll.“
                     </div>

@@ -23,6 +23,7 @@
 
             @include custom-media(1024px) {
                 width: 100%;
+                @include flex-center;
             }
 
             .profile {

@@ -44,7 +44,7 @@
             .box {
                 background-color: $white-color;
                 padding: 35px;
-                max-width: 60%;
+                max-width: 80%;
                 box-shadow: $box-shadow;
 
                 @include custom-media(600px) {

@@ -1,7 +1,7 @@
 import React from 'react'
-import "./SalesLeadershipHarmonySection.scss"
 import Image from 'next/image'
 import { AppIcons } from '@/utils/AppIcons/AppIcons'
+import "./SalesLeadershipHarmonySection.scss"
 
 const SalesLeadershipHarmonySection = () => {
     return (
@@ -11,7 +11,7 @@ const SalesLeadershipHarmonySection = () => {
                     ReflectIQ Sales Leadership &ndash; wenn Klarheit, Kultur und Vertrieb im Takt schlagen
                 </div>
                 <div className='content'>
-                    <div className='left'>
+                    <div className='left' data-aos="fade-right">
                         <div className='imgcontainer'>
                             <div className='item'>
                                 <Image src={AppIcons.harmonySectionImage} alt="harmonySectionImage" />
@@ -21,7 +21,7 @@ const SalesLeadershipHarmonySection = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='right'>
+                    <div className='right' data-aos="fade-left">
                         <div className='description'>
                             ReflectIQ Sales Leadership ist kein Training, kein Workshop und kein Coaching.&ndash; Es ist ein hochflexibles, 6-monatiges Führungssystem, das sich nahtlos in den Alltag integriert – präzise, minimalinvasiv und wirkungsstark.
                         </div>

@@ -1,8 +1,8 @@
 import Header from "@/components/header/Header";
 import { Footer } from "@/components/footer/Footer";
 import FloatingButton from "@/components/ui/floatingButton/FloatingButton";
+import AOSInitializer from "@/utils/AOSInitializer/AOSInitializer";
 import "./globals.scss";
-
 
 export const metadata = {
   title: "Life Institut AG ",
@@ -13,6 +13,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+        <AOSInitializer /> {/* 👈 Mount AOS */}
         <div className='main-layout-section'>
           <div className='header-section'>
             <Header />
@@ -21,7 +22,6 @@ export default function RootLayout({ children }) {
             <main>
               {children}
             </main>
-
           </div>
           <div className='footer-section'>
             <Footer />

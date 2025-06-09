@@ -22,7 +22,7 @@ Gezielte Impulse und minimalinvasive Teaminterventionen entfalten eine Dynamik, 
 const CoreModulesSection = () => {
   return (
     <section className='core-modules-section'>
-      <div className='container'>
+      <div className='container' data-aos="fade-up">
         <h2 className='title'>Die drei zentralen Wirkmodule</h2>
         <div className='bubbles'>
           {modules.map((mod, index) => (

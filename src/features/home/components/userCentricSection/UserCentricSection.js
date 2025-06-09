@@ -26,10 +26,10 @@ const UserCentricSection = () => {
                     </div>
                 </div>
                 <div className='user-centric-section__middle-section'>
-                    <div className='left'>
+                    <div className='left' data-aos="fade-right">
                         <Image src={AppIcons.userCentricSectionImage1} alt="userCentricSectionImage1" />
                     </div>
-                    <div className='right'>
+                    <div className='right' data-aos="fade-left">
                         <div className='box'>
                             <div className='description'>
                                 ReflectIQ ist kein Produkt von der Stange – sondern eine Individuallösung, die unternehmensspezifisch wirkt. Und die Rendite erzeugt: kulturell, menschlich und wirtschaftlich.
@@ -44,7 +44,7 @@ const UserCentricSection = () => {
                     </div>
                 </div>
                 <div className='user-centric-section__bottom-section'>
-                    <div className='left'>
+                    <div className='left' data-aos="fade-right">
                         <div className='box'>
                             <div className='description'>
                                 ReflectIQ fügt sich nahtlos in den Arbeitsalltag ein – mit minimalem Zeitaufwand und maximaler Wirkung dort, wo es zählt: im Denken, Fühlen und Handeln von Führungskräften, Vertrieb und den Teams, die täglich die Herzkammer Deiner Vertriebserfolgs bilden.
@@ -60,17 +60,17 @@ const UserCentricSection = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='right'>
+                    <div className='right' data-aos="fade-left">
                         <Image src={AppIcons.userCentricSectionImage2} alt="userCentricSectionImage2" />
                     </div>
                 </div>
             </div>
-            <div className='user-centric-section-2'>
+            <div className='user-centric-section-2' data-aos="fade-up">
                 <div className="container">
-                    <div className='title'>
+                    <div className='title' >
                         Jetzt unverbindliches Strategiegespräch vereinbaren
                     </div>
-                    <div className='content'>
+                    <div className='content' >
                         Finde heraus, welches Format für Dein Unternehmen den größten Hebel entfaltet.
                     </div>
                     <Button label="Button" />

@@ -10,11 +10,11 @@ const CallToActionSection = () => {
         <Image src={AppIcons.callToActionSectionBg} alt="callToActionSectionBackground" />
       </div>
       <div className="container">
-        <div className="title">
+        <div className="title" data-aos="fade-up">
           Jetzt ist der Moment – denn Herausforderungen lösen sich nicht von selbst.
         </div>
 
-        <div className='box'>
+        <div className='box' data-aos="fade-right">
           <div className="description">
             ReflectIQ ist keine Maßnahme für irgendwann. Es ist eine strategische Entscheidung für jetzt– für Unternehmen, die nicht mehr warten wollen, bis der Vertriebsdruck steigt oder die Kultur ins Rutschen gerät. Je früher Du Dein Führungssystem in Bewegung bringst, desto mehr Dynamik gewinnst Du zurück.
           </div>

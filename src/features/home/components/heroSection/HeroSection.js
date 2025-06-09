@@ -11,7 +11,7 @@ const HeroSection = () => {
         <div className="hero-section__effect">
           <Image src={AppIcons.EffectImage} alt="Effect" />
         </div>
-        <div className="hero-section__content">
+        <div className="hero-section__content" data-aos="fade-right">
           <h1>Die neue Herzkammer<br />Deines Vertriebserfolgs</h1>
           <h3>Leadership, die High Performance-Teams<br />stärkt und entfesselt.</h3>
           <p>
@@ -25,7 +25,7 @@ const HeroSection = () => {
         </div>
       </section>
       <section className='hero-section-middle'>
-        <div className='hero-section-middle__content'>
+        <div className='hero-section-middle__content' data-aos="fade-up">
           <div className="hero-section-middle__content__itemsection">
             <div className="hero-section-middle__content__itemsection__item">
               <div className='top'>
@@ -53,12 +53,12 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
-        <div className='hero-section-middle__content-2'>
+        <div className='hero-section-middle__content-2' data-aos="zoom-out-up">
           Was wäre, wenn nicht mehr Druck die Performance treibt &ndash; sondern Verbundenheit und Engagement ?
         </div>
       </section>
       <section className='hero-section-bottom'>
-        <div className='hero-section-bottom__content'>
+        <div className='hero-section-bottom__content' data-aos="flip-left">
           <div className='hero-section-bottom__content__title'>
             Jetzt kostenfreies Strategiegespräch sichern
           </div>

@@ -85,6 +85,7 @@ export default function LeadershipPhilosophySection() {
           ref={sliderRef}
           onMouseDown={onMouseDown}
           onTouchStart={onMouseDown}
+          data-aos="fade-left"
         >
           {videos.map((video, i) => (
             <div className="video-card" key={i}>

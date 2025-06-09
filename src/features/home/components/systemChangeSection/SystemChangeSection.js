@@ -11,7 +11,7 @@ const SystemChangeSection = () => {
                 <Image src={AppIcons.systemChangeSectionBackground} alt="systemChangeSectionBackground" />
             </div>
             <div className='system-change-section__content'>
-                <div className="left">
+                <div className="left" data-aos="fade-right">
                     <div className="box">
                         <div className="title">
                             ReflectIQ bringt Bewegung in festgefahrene Systeme – ohne die Organisation zu blockieren.
@@ -21,7 +21,7 @@ const SystemChangeSection = () => {
                         </div>
                     </div>
                 </div>
-                <div className="right">
+                <div className="right" data-aos="fade-left">
                     <div className="box">
                         <div className="title">
                         Du willst Führung entwickeln, ohne Zeit zu verlieren?

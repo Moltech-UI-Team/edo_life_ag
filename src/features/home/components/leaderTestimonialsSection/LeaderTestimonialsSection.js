@@ -33,7 +33,12 @@ const LeaderTestimonialsSection = () => {
         <h2 className="section-title">Was Leader über ReflectIQ sagen</h2>
         <div className="testimonials-grid">
           {testimonials.map((item, index) => (
-            <div className="testimonial-card" key={index}>
+            <div
+              className="testimonial-card"
+              key={index}
+              data-aos="fade-up"
+              data-aos-delay={index * 400} // 150ms delay between each card
+            >
               <div className="testimonial-image-wrapper">
                 <Image src={item.image} alt={item.name} className="testimonial-image" />
                 <div className="testimonial-name-overlay">{item.name}</div>
@@ -42,6 +47,7 @@ const LeaderTestimonialsSection = () => {
             </div>
           ))}
         </div>
+
       </div>
     </section>
   );

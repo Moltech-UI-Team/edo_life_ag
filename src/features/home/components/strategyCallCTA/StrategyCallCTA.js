@@ -10,7 +10,7 @@ const StrategyCallCTA = () => {
             <div className='strategy-call-cta__bg'>
                 <Image src={AppIcons.strategyCallCTABackground} alt="strategyCallCTABackground" />
             </div>
-            <div className="container">
+            <div className="container" data-aos="fade-up">
                 <div className="title">
                     Jetzt unverbindliches Strategiegespräch vereinbaren
                 </div>

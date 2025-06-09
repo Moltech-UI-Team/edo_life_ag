@@ -10,10 +10,10 @@ const LeadershipBreakdownSection = () => {
       <div className='section-1'>
         <div className='title'>Wenn Führung ins Stolpern gerät &ndash; und Teams aus dem Takt kommen.</div>
         <div className='section_item'>
-          <div className='left imgcontainer'>
+          <div className='left imgcontainer' data-aos="fade-right">
             <Image src={AppIcons.leadership1} alt="leadership1" />
           </div>
-          <div className='right'>
+          <div className='right' data-aos="fade-left">
             <div className='title'>
               Es beginnt leise &ndash; und endet in Leistungsverlust
             </div>
@@ -34,7 +34,7 @@ const LeadershipBreakdownSection = () => {
           </div>
         </div>
         <div className='section_item'>
-          <div className='left'>
+          <div className='left' data-aos="fade-right">
             <div className='title'>
               Warum klassische Methoden nicht mehr greifen
             </div>
@@ -47,15 +47,15 @@ const LeadershipBreakdownSection = () => {
               <li>Der Markt fordert Tempo &ndash; aber intern fehlt Richtung</li>
             </ul>
           </div>
-          <div className='right'>
+          <div className='right' data-aos="fade-left">
             <Image src={AppIcons.leadership2} alt="leadership2" />
           </div>
         </div>
         <div className='section_item'>
-          <div className='left'>
+          <div className='left' data-aos="fade-right">
             <Image src={AppIcons.leadership3} alt="leadership3" />
           </div>
-          <div className='right'>
+          <div className='right' data-aos="fade-left">
             <div className='title'>
               Was passiert, wenn sich nichts ändert?
             </div>
@@ -69,7 +69,7 @@ const LeadershipBreakdownSection = () => {
           </div>
         </div>
       </div>
-      <div className='section-2'>
+      <div className='section-2' data-aos="fade-up">
         <div className='title'>
           ReflectIQ ist die strategische Intervention für Führung, Vertrieb und Teamdynamik &ndash; damit die Herzkammer wieder kraftvoll schlägt und Spitzenleistung kein Zufall bleibt.
         </div>

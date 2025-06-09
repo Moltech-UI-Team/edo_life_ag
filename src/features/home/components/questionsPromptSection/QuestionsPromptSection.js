@@ -7,7 +7,7 @@ import "./QuestionsPromptSection.scss"
 const QuestionsPromptSection = () => {
     return (
         <div className="questions-prompt-section">
-            <div className='message-box'>
+            <div className='message-box' data-aos="flip-right">
                 <div className="title">Du hast noch offene Fragen?</div>
                 <div className="description">Vereinbare jetzt ein unverbindliches Erstgespräch. Wir nehmen uns Zeit für Deine Situation.</div>
                 <Button label="Button" />
