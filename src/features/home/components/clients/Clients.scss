@@ -1,36 +1,44 @@
-.clients {
+.clients-marquee {
   padding: 15px 0;
+  overflow: hidden;
+  width: 100%;
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
+}
+
+.marquee__inner {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start; // We'll align start for smooth scroll
-  align-items: center;
-  gap: 50px;
-  overflow-x: auto;
-  cursor: grab;
-  user-select: none;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
+  width: max-content;
+  animation: marquee 20s linear infinite;
+}
 
-  &.active {
-    cursor: grabbing;
+.marquee__group {
+  display: flex;
+}
+
+.clients-marquee__item {
+  margin: 0 25px;
+  white-space: nowrap;
+  padding: 4px 16px 4px 12px;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
   }
-
-  /* Hide scrollbar */
-  &::-webkit-scrollbar {
-    display: none;
-  }
-
-  -ms-overflow-style: none;
-  /* IE and Edge */
-  scrollbar-width: none;
-  /* Firefox */
-
-  @include custom-media(1200px) {
-    justify-content: center;
-  }
-
-  &__item {
-    flex: 0 0 auto;
-    user-select: none;
+  100% {
+    transform: translateX(-50%);
   }
 }
