@@ -2,14 +2,14 @@ import React, { useRef, useEffect } from "react";
 import "./LeadershipPhilosophySection.scss"
 
 const videos = [
-  { url: 'https://www.youtube.com/embed/dQw4w9WgXcQ', name: 'Herr Mustermann' },
-  { url: 'https://www.youtube.com/embed/3JZ_D3ELwOQ', name: 'Herr Mustermann' },
-  { url: 'https://www.youtube.com/embed/ysz5S6PUM-U', name: 'Herr Mustermann' },
-  { url: 'https://www.youtube.com/embed/kXYiU_JCYtU', name: 'Herr Mustermann' },
-  { url: 'https://www.youtube.com/embed/kXYiU_JCYtU', name: 'Herr Mustermann' },
-  { url: 'https://www.youtube.com/embed/kXYiU_JCYtU', name: 'Herr Mustermann' },
-  { url: 'https://www.youtube.com/embed/kXYiU_JCYtU', name: 'Herr Mustermann' },
-  { url: 'https://www.youtube.com/embed/kXYiU_JCYtU', name: 'Herr Mustermann' },
+  { url: '', name: 'Herr Mustermann' },
+  { url: '', name: 'Herr Mustermann' },
+  { url: '', name: 'Herr Mustermann' },
+  { url: '', name: 'Herr Mustermann' },
+  { url: '', name: 'Herr Mustermann' },
+  { url: '', name: 'Herr Mustermann' },
+  { url: '', name: 'Herr Mustermann' },
+  { url: '', name: 'Herr Mustermann' },
 ];
 
 export default function LeadershipPhilosophySection() {
@@ -90,14 +90,19 @@ export default function LeadershipPhilosophySection() {
           {videos.map((video, i) => (
             <div className="video-card" key={i}>
               <div className="video-title">Video Führungskräfte</div>
-              <div className="iframe-wrapper">
-                <iframe
-                  src={video.url}
-                  title={`video-${i}`}
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                />
+              <div className={`iframe-wrapper ${!video.url ? 'no-url' : ''}`}>
+                {video.url ? (
+                  <iframe
+                    src={video.url}
+                    title={`video-${i}`}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                ) : (
+                  <div className="no-url-message">No video URL found</div>
+                )}
               </div>
+
               <div className="video-name">{video.name}</div>
             </div>
           ))}

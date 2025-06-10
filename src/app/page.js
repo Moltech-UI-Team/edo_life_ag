@@ -1,7 +1,5 @@
-// app/page.js
-import React from 'react';
-import HomePage from '@/features/home/HomePage';
+import { redirect } from 'next/navigation';
 
 export default function Page() {
-  return <HomePage />;
+  redirect('/sales-leadership');
 }

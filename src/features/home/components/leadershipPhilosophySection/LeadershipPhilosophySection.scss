@@ -82,11 +82,25 @@
         min-height: 300px;
         max-height: 300px;
 
+        &.no-url {
+          @include flex-center;
+          height: 200px;
+          background-color: $black-color;
+          color: $white-color;
+          font-size: $font-size-lg;
+          border-radius: 8px;
+          padding: 0;
+        }
+
         @include custom-media(1300px) {
           min-width: 300px;
           max-width: 300px;
           min-height: 200px;
           max-height: 200px;
+        }
+
+        .no-url-message {
+          padding: 10px;
         }
 
         iframe {
